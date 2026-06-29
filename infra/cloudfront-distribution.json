@@ -1,0 +1,74 @@
+{
+  "CallerReference": "nostuds-com-2026-06-29",
+  "Comment": "nostuds.com static site",
+  "Enabled": true,
+  "DefaultRootObject": "index.html",
+  "Aliases": {
+    "Quantity": 2,
+    "Items": ["nostuds.com", "www.nostuds.com"]
+  },
+  "Origins": {
+    "Quantity": 1,
+    "Items": [
+      {
+        "Id": "nostuds.com.s3.us-east-1.amazonaws.com",
+        "DomainName": "nostuds.com.s3.us-east-1.amazonaws.com",
+        "OriginPath": "",
+        "S3OriginConfig": {
+          "OriginAccessIdentity": ""
+        },
+        "OriginAccessControlId": "E2WEFKMI8DPQ1C",
+        "ConnectionAttempts": 3,
+        "ConnectionTimeout": 10
+      }
+    ]
+  },
+  "DefaultCacheBehavior": {
+    "TargetOriginId": "nostuds.com.s3.us-east-1.amazonaws.com",
+    "ViewerProtocolPolicy": "redirect-to-https",
+    "AllowedMethods": {
+      "Quantity": 2,
+      "Items": ["GET", "HEAD"],
+      "CachedMethods": {
+        "Quantity": 2,
+        "Items": ["GET", "HEAD"]
+      }
+    },
+    "Compress": true,
+    "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+    "FunctionAssociations": {
+      "Quantity": 1,
+      "Items": [
+        {
+          "EventType": "viewer-request",
+          "FunctionARN": "arn:aws:cloudfront::181398284705:function/nostuds-www-redirect"
+        }
+      ]
+    }
+  },
+  "CustomErrorResponses": {
+    "Quantity": 2,
+    "Items": [
+      {
+        "ErrorCode": 403,
+        "ResponsePagePath": "/index.html",
+        "ResponseCode": "200",
+        "ErrorCachingMinTTL": 0
+      },
+      {
+        "ErrorCode": 404,
+        "ResponsePagePath": "/index.html",
+        "ResponseCode": "200",
+        "ErrorCachingMinTTL": 0
+      }
+    ]
+  },
+  "ViewerCertificate": {
+    "ACMCertificateArn": "arn:aws:acm:us-east-1:181398284705:certificate/22b0614a-9f7a-4a0e-833f-c2b781622edd",
+    "SSLSupportMethod": "sni-only",
+    "MinimumProtocolVersion": "TLSv1.2_2021"
+  },
+  "HttpVersion": "http2and3",
+  "IsIPV6Enabled": true,
+  "PriceClass": "PriceClass_100"
+}

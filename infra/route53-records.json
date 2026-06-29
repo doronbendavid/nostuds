@@ -1,0 +1,53 @@
+{
+  "Comment": "nostuds.com website",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "nostuds.com",
+        "Type": "A",
+        "AliasTarget": {
+          "HostedZoneId": "Z2FDTNDATAQYW2",
+          "DNSName": "d33jglefisyp18.cloudfront.net",
+          "EvaluateTargetHealth": false
+        }
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "nostuds.com",
+        "Type": "AAAA",
+        "AliasTarget": {
+          "HostedZoneId": "Z2FDTNDATAQYW2",
+          "DNSName": "d33jglefisyp18.cloudfront.net",
+          "EvaluateTargetHealth": false
+        }
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "www.nostuds.com",
+        "Type": "A",
+        "AliasTarget": {
+          "HostedZoneId": "Z2FDTNDATAQYW2",
+          "DNSName": "d33jglefisyp18.cloudfront.net",
+          "EvaluateTargetHealth": false
+        }
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "www.nostuds.com",
+        "Type": "AAAA",
+        "AliasTarget": {
+          "HostedZoneId": "Z2FDTNDATAQYW2",
+          "DNSName": "d33jglefisyp18.cloudfront.net",
+          "EvaluateTargetHealth": false
+        }
+      }
+    }
+  ]
+}
