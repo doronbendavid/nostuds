@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffc43d"/>
+      <stop offset="45%" stop-color="#ff7a3c"/>
+      <stop offset="90%" stop-color="#ff2d95"/>
+    </linearGradient>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="rgba(44,18,80,0.06)"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#faf5ff"/>
+  <rect width="1200" height="630" fill="url(#scanlines)"/>
+  <rect y="0" width="1200" height="8" fill="#2c1250"/>
+
+  <circle cx="600" cy="250" r="170" fill="url(#sun)" opacity="0.95"/>
+  <g opacity="0.9">
+    <rect x="430" y="300" width="340" height="14" fill="#faf5ff"/>
+    <rect x="430" y="328" width="340" height="14" fill="#faf5ff"/>
+    <rect x="430" y="356" width="340" height="14" fill="#faf5ff"/>
+    <rect x="430" y="384" width="340" height="14" fill="#faf5ff"/>
+  </g>
+
+  <g transform="translate(500 210) scale(4)" shape-rendering="crispEdges">
+    <rect x="5" y="10" width="6" height="1" fill="#e52521"/>
+    <rect x="4" y="11" width="8" height="1" fill="#e52521"/>
+    <rect x="3" y="12" width="10" height="1" fill="#e52521"/>
+    <rect x="5" y="13" width="7" height="1" fill="#e52521"/>
+    <rect x="4" y="14" width="9" height="1" fill="#e8a877"/>
+    <rect x="4" y="15" width="9" height="1" fill="#e8a877"/>
+    <rect x="5" y="16" width="7" height="1" fill="#e8a877"/>
+    <rect x="5" y="17" width="7" height="1" fill="#e8a877"/>
+    <rect x="6" y="18" width="5" height="1" fill="#e8a877"/>
+    <rect x="7" y="19" width="3" height="1" fill="#e8a877"/>
+    <rect x="6" y="15" width="1" height="1" fill="#262230"/>
+    <rect x="10" y="15" width="1" height="1" fill="#262230"/>
+    <rect x="8" y="17" width="1" height="1" fill="#262230"/>
+  </g>
+
+  <g transform="translate(620 210) scale(4)" shape-rendering="crispEdges">
+    <rect x="5" y="10" width="7" height="1" fill="#43a047"/>
+    <rect x="4" y="11" width="9" height="1" fill="#43a047"/>
+    <rect x="3" y="12" width="11" height="1" fill="#43a047"/>
+    <rect x="4" y="13" width="9" height="1" fill="#43a047"/>
+    <rect x="3" y="14" width="11" height="1" fill="#e8a877"/>
+    <rect x="3" y="15" width="11" height="1" fill="#e8a877"/>
+    <rect x="3" y="16" width="11" height="1" fill="#e8a877"/>
+    <rect x="3" y="17" width="11" height="1" fill="#e8a877"/>
+    <rect x="3" y="18" width="11" height="1" fill="#262230"/>
+    <rect x="4" y="19" width="9" height="1" fill="#262230"/>
+    <rect x="5" y="20" width="7" height="1" fill="#262230"/>
+    <rect x="4" y="15" width="1" height="1" fill="#262230"/>
+    <rect x="8" y="15" width="1" height="1" fill="#262230"/>
+    <rect x="3" y="17" width="1" height="1" fill="#262230"/>
+    <rect x="11" y="17" width="1" height="1" fill="#262230"/>
+  </g>
+
+  <text x="600" y="470" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="54" font-weight="700" fill="#2c1250" letter-spacing="6">NO STUDS</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="24" fill="#4a3168">100% ORGANIC, FREE-RANGE GAMES</text>
+  <text x="600" y="560" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="20" fill="#ff2d95">nostuds.com</text>
+
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#2c1250" stroke-width="4"/>
+</svg>
